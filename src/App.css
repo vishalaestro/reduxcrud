@@ -1,0 +1,156 @@
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+html, body {
+  height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+}
+.flex-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.row {
+  width: auto;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+.imgStyle{
+  width:85%;
+    height: 100%;
+}
+
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 330px;
+  max-width: 20%;
+  height: 413px;
+  display: flex;
+  flex-direction: column;
+  margin:2%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.imgContainer{
+  width: 100%;
+    height: 100%;
+    background: #003d00;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  text-align: left;
+  background: whitesmoke;
+}
+
+.deleteButton{
+  float:right;
+  padding:2%;
+}
+
+.btn {
+  position: relative;
+  display: block;
+  margin: 2px;
+  padding: 9px;
+  overflow: hidden;
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  float: right;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  background-color: red;
+  color: #ecf0f1;
+  transition: background-color .3s;
+}
+
+.btnEdit{
+  position: relative;
+    display: block;
+    margin: 2px;
+    padding: 9px;
+    overflow: hidden;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    float: right;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background-color: green;
+    color: #ecf0f1;
+    transition: background-color .3s;
+}
+
+.loader {
+  position: fixed;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    opacity: 0.5;
+    background: aliceblue;
+}
+
+.edituser{
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+}
+
+.fields {
+  width: 38%;
+  display: flex;
+  padding: 5%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.field:invalid {
+  border: 1px solid red;
+}
+.field:valid {
+  border: 1px solid green;
+}
